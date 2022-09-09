@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZED | Login</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+<body>
+    <main>
+        <section class="authentication--block">
+            <div class="authentication__main d-flex">
+                <div class="authentication__left">
+                    <div class="authentication__left__inner">
+                        <div class="header__logo">
+                            <a href="#">
+                                <img src="img/logo_dark.png" alt="ZED">
+                            </a>
+                        </div>
+                        <div class="header_message">
+                            <h1>Hi, Welcome Back!</h1>
+                        </div>
+                        <div class="authentication__form">
+                            <form method="POST" action="" aria-label="Login">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text bg-transparent"><img class="in__svg" src="./img/icons/user.svg" alt="User"></div>
+                                        </div>
+                                        <input id="email" type="text" class="form-control border-left-0" name="email" value="" required="" placeholder="Email" autocomplete="current-password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text bg-transparent"><img class="in__svg" src="./img/icons/user.svg" alt="User"></div>
+                                        </div>
+                                        <input id="name" type="text" class="form-control border-left-0" name="username" value="" required="" placeholder="Username" autocomplete="current-password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text bg-transparent"><img class="in__svg" src="./img/icons/locked.svg" alt="Lock"></div>
+                                        </div>
+                                        <input id="password" type="password" class="form-control border-left-0" name="password" value="" required="" placeholder="******" autocomplete="current-password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn d-block w-100 btn__login">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="authentication__right">
+                    <div class="authentication__right__inner d-flex align-items-center justify-content-center">
+                        <img src="img/contact_img_white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

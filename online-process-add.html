@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZED | File Details</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="logo">
+            <a href="index.html"><img src="./img/logo.png" alt="ZED"></a>
+        </div>
+        <ul class="sidebar__menu side-nav">
+            <li class="side-nav-item">
+                <a href="#" class="side-nav-link"><img class="in__svg" src="./img/icons/category.svg" alt="Dashboard"> <span>Dashboard</span></a>
+            </li>
+            <li class="side-nav-item">
+                <a href="#" class="side-nav-link"><img class="in__svg" src="./img/icons/two-user.svg" alt="Employees"> <span>Employees</span></a>
+            </li>
+            <li class="side-nav-item">
+                <a href="#" class="side-nav-link"><img class="in__svg" src="./img/icons/activity.svg" alt="Projects"> <span>Projects</span></a>
+            </li>
+            <li class="side-nav-item has-child">
+                <a class="side-nav-link collapsed" data-toggle="collapse" href="#sidebarFiles" role="button" aria-expanded="false" aria-controls="sidebarFiles"><img class="in__svg" src="./img/icons/folder.svg" alt="Files"> <span>Files</span></a>
+                <div class="side-nav-submenu collapse" id="sidebarFiles">
+                    <ul class="list-unstyled">
+                        <li class="nav-submenu-item">
+                            <a href="online-process.html">Client Details</a>
+                        </li>
+                        <li class="nav-submenu-item">
+                            <a href="#">Offline Process</a>
+                        </li>
+                        <li class="nav-submenu-item">
+                            <a href="#">Approved</a>
+                        </li>
+                        <li class="nav-submenu-item">
+                            <a href="#">B.U.C.</a>
+                        </li>
+                        <li class="nav-submenu-item">
+                            <a href="#">Reject</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="side-nav-item">
+                <a href="#" class="side-nav-link"><img class="in__svg" src="./img/icons/paper.svg" alt="Clients"> <span>Clients</span></a>
+            </li>
+            <li class="side-nav-item">
+                <a href="#" class="side-nav-link"><img class="in__svg" src="./img/icons/wallet.svg" alt="Expenses"> <span>Expenses</span></a>
+            </li>
+        </ul>
+    </aside>
+    <main class="main__wapper">
+        <header class="header navbar navbar-expand justify-content-between">
+            <div class="page-title">
+                <h1 class="h4 mb-0">0012344</h1>
+                <p class="mb-0">ZED File No</p>
+            </div>
+            <div class="header-action-form d-flex">
+                <form action="#" method="post">
+                    <div class="form-group mb-0">
+                        <i class="search-icon"><img class="in__svg" src="./img/icons/search.svg" alt="Search"></i>
+                        <input type="text" name="search" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+                <div class="header-add-action dropdown">
+                    <a href="javascript: void(0);" class="btn btn-sm" role="button" id="add-plus" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Add +</a>
+                    <ul class="list-unstyled dropdown-menu" aria-labelledby="add-plus">
+                        <li class="dropdown-item">
+                            <a href="#"><img class="in__svg" src="./img/icons/activity.svg" alt="Todo"> Todo</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#"><img class="in__svg" src="./img/icons/thee-user.svg" alt="Employee"> Employee</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#"><img class="in__svg" src="./img/icons/profile.svg" alt="Client"> Client</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#"><img class="in__svg" src="./img/icons/chart.svg" alt="Expense"> Expense</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#"><img class="in__svg" src="./img/icons/folder.svg" alt="File"> File</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#"><img class="in__svg" src="./img/icons/paper-plus.svg" alt="Document"> Document</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="navbar-nav topbar__menu list-unstyled align-items-center">
+                <li class="dropdown">
+                    <a href="#" role="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="header-action-icon"><img class="in__svg" src="./img/icons/notification.svg" alt="Bell"></span>
+                        <span class="notification-icon-badge"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="notification">
+                        <h6 class="mb-3">
+                            <span class="float-right">
+                                <a href="javascript: void(0);">
+                                    <small>Clear All</small>
+                                </a>
+                            </span>Notification
+                        </h6>
+                        <ul class="notification__list list-unstyled">
+                            <li class="notification--item unread">
+                                <h6 class="mb-2">Today</h6>
+                                <div class="dropdown-item d-flex">
+                                    <div class="remove">x</div>
+                                    <div class="user-avtar">
+                                        <img src="./img/user.png" alt="User">
+                                    </div>
+                                    <div class="notification-details ml-2">
+                                        <h5 class="user-name mb-0">Admin <small>1 min ago</small></h5>
+                                        <p class="user-message small text-truncate mb-0">Caleb Flakelar commented on Admin ted on Admin ted on Admin</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-item d-flex">
+                                    <div class="remove">x</div>
+                                    <div class="user-avtar">
+                                        <img src="./img/user.png" alt="User">
+                                    </div>
+                                    <div class="notification-details ml-2">
+                                        <h5 class="user-name mb-0">Krunal R. <small>1 hours ago</small></h5>
+                                        <p class="user-message small text-truncate mb-0">New user registered</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="notification--item">
+                                <h6 class="mb-2">Yesterday</h6>
+                                <div class="dropdown-item d-flex">
+                                    <div class="remove">x</div>
+                                    <div class="user-avtar">
+                                        <img src="./img/user.png" alt="User">
+                                    </div>
+                                    <div class="notification-details ml-2">
+                                        <h5 class="user-name mb-0">Admin <small>1 hours ago</small></h5>
+                                        <p class="user-message small text-truncate mb-0">Caleb Flakelar commented on Admin ted on Admin ted on Admin</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="notification--item">
+                                <h6 class="mb-2">30 Jan 2022</h6>
+                                <div class="dropdown-item d-flex">
+                                    <div class="remove">x</div>
+                                    <div class="user-avtar">
+                                        <img src="./img/user.png" alt="User">
+                                    </div>
+                                    <div class="notification-details ml-2">
+                                        <h5 class="user-name mb-0">Admin <small>1 hours ago</small></h5>
+                                        <p class="user-message small text-truncate mb-0">Caleb Flakelar commented on Admin ted on Admin ted on Admin</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-item d-flex">
+                                    <div class="remove">x</div>
+                                    <div class="user-avtar">
+                                        <img src="./img/user.png" alt="User">
+                                    </div>
+                                    <div class="notification-details ml-2">
+                                        <h5 class="user-name mb-0">Admin <small>1 hours ago</small></h5>
+                                        <p class="user-message small text-truncate mb-0">Caleb Flakelar commented on Admin ted on Admin ted on Admin</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-item d-flex">
+                                    <div class="remove">x</div>
+                                    <div class="user-avtar">
+                                        <img src="./img/user.png" alt="User">
+                                    </div>
+                                    <div class="notification-details ml-2">
+                                        <h5 class="user-name mb-0">Admin <small>1 hours ago</small></h5>
+                                        <p class="user-message small text-truncate mb-0">Caleb Flakelar commented on Admin ted on Admin ted on Admin</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" role="button" id="message" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="header-action-icon"><img class="in__svg" src="./img/icons/message.svg" alt="Envelope"></span>
+                        <span class="notification-icon-badge"></span>
+                    </a>
+                    <div class="notification__list dropdown-menu dropdown-menu-right" aria-labelledby="message">
+                        <h6 class="mb-3">
+                            <span class="float-right">
+                                <a href="javascript: void(0);">
+                                    <small>Clear All</small>
+                                </a>
+                            </span>Message
+                        </h6>
+                        <ul class="notification__list list-unstyled">
+                            <li class="notification--item unread">
+                                <h6 class="mb-2">Today</h6>
+                                <div class="dropdown-item d-flex">
+                                    <div class="remove">x</div>
+                                    <div class="user-avtar">
+                                        <img src="./img/user.png" alt="User">
+                                    </div>
+                                    <div class="notification-details ml-2">
+                                        <h5 class="user-name mb-0">Admin <small>1 min ago</small></h5>
+                                        <p class="user-message small text-truncate mb-0">Caleb Flakelar commented on Admin ted on Admin ted on Admin</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-item d-flex">
+                                    <div class="remove">x</div>
+                                    <div class="user-avtar">
+                                        <img src="./img/user.png" alt="User">
+                                    </div>
+                                    <div class="notification-details ml-2">
+                                        <h5 class="user-name mb-0">Krunal R. <small>1 hours ago</small></h5>
+                                        <p class="user-message small text-truncate mb-0">New user registered</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="notification--item">
+                                <h6 class="mb-2">Yesterday</h6>
+                                <div class="dropdown-item d-flex">
+                                    <div class="remove">x</div>
+                                    <div class="user-avtar">
+                                        <img src="./img/user.png" alt="User">
+                                    </div>
+                                    <div class="notification-details ml-2">
+                                        <h5 class="user-name mb-0">Admin <small>1 hours ago</small></h5>
+                                        <p class="user-message small text-truncate mb-0">Caleb Flakelar commented on Admin ted on Admin ted on Admin</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="notification--item">
+                                <h6 class="mb-2">30 Jan 2022</h6>
+                                <div class="dropdown-item d-flex">
+                                    <div class="remove">x</div>
+                                    <div class="user-avtar">
+                                        <img src="./img/user.png" alt="User">
+                                    </div>
+                                    <div class="notification-details ml-2">
+                                        <h5 class="user-name mb-0">Admin <small>1 hours ago</small></h5>
+                                        <p class="user-message small text-truncate mb-0">Caleb Flakelar commented on Admin ted on Admin ted on Admin</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-item d-flex">
+                                    <div class="remove">x</div>
+                                    <div class="user-avtar">
+                                        <img src="./img/user.png" alt="User">
+                                    </div>
+                                    <div class="notification-details ml-2">
+                                        <h5 class="user-name mb-0">Admin <small>1 hours ago</small></h5>
+                                        <p class="user-message small text-truncate mb-0">Caleb Flakelar commented on Admin ted on Admin ted on Admin</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-item d-flex">
+                                    <div class="remove">x</div>
+                                    <div class="user-avtar">
+                                        <img src="./img/user.png" alt="User">
+                                    </div>
+                                    <div class="notification-details ml-2">
+                                        <h5 class="user-name mb-0">Admin <small>1 hours ago</small></h5>
+                                        <p class="user-message small text-truncate mb-0">Caleb Flakelar commented on Admin ted on Admin ted on Admin</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>                     
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" role="button" id="user-account" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="account-user-avatar"><img src="./img/user.png" alt="User"></span>
+                        <span class="account-user-name">Zaid Shaikh</span>
+                    </a>
+                    <ul class="list-unstyled dropdown-menu" aria-labelledby="user-account">
+                        <li class="dropdown-item">
+                            <a href="#">Profile</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu">
+                    <img class="in__svg" src="./img/icons/mobile-menu.svg" alt="Mobile menu">
+                </li>
+            </ul>
+        </header>
+        <div class="content__wrapper">
+            <section class="page-content">
+                <div class="page-title mobile-title">
+                    <h1 class="h4 mb-0">0012344</h1>
+                    <p class="mb-4">ZED File No</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card height-auto">
+                            <ul class="file__process-list list-unstyled">
+                                <li class="active">
+                                    <a href="#"><span>1</span> File Details</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>2</span> Required Document Lists</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>3</span> Send Message to Client</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>4</span> Plot Validation Certificate</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>5</span> E-Nagar Portal</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>6</span> Document Upload (pdf)</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>7</span> Road Deposit/Scrutiny Fees</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>8</span> Assistant/Junior Engineer</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>9</span> Deputy Engineer</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>10</span> Zonal Officer/I.C Town Planner</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card p-5">
+                            <div class="card-header bg-transparent border-0 mb-5 p-0">
+                                <div class="row align-items-center justify-content-between">
+                                    <div class="col-md-6">
+                                        <h6 class="title-line text-shadow-yellow mb-0 pb-3">File Details</h6>
+                                    </div>
+                                    <div class="col-md-6 text-right">
+                                        <h5 class="mb-0 text-shadow-yellow">TPS No. 07 Vesu Magdalla</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <form action="#" method="post">
+                                    <div class="row">
+                                        <div class="form-group col-md-6 col-sm-6">
+                                            <label for="">SMC Case No./Application ID No</label>
+                                            <input type="text" class="form-control" name="case_no" placeholder="Enter SMC Case No./Application ID No">
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6">
+                                            <label for="">Date*</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                  <div class="input-group-text bg-transparent"><img src="./img/icons/calendar.svg" alt="Calendar"></div>
+                                                </div>
+                                                <input type="text" class="form-control zed__datepicker border-left-0" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6">
+                                            <label for="">Village</label>
+                                            <input type="text" class="form-control" name="village_name" placeholder="Enter Village Name">
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6">
+                                            <label for="">Taluka</label>
+                                            <select name="taluka" class="form-control custom-select" required>
+                                                <option value="0">Taluka</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6">
+                                            <label for="">District</label>
+                                            <input type="text" class="form-control" name="district_name" placeholder="Enter District Name">
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6">
+                                            <label for="">Ward No</label>
+                                            <select name="ward_no" class="form-control custom-select" required>
+                                                <option value="0">Ward No</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6">
+                                            <label for="">C.S No</label>
+                                            <input type="text" class="form-control" name="cs_name" placeholder="Enter C.S No">
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6">
+                                            <label for="">T.P.S No</label>
+                                            <select name="tps_no" class="form-control custom-select" required>
+                                                <option value="0">T.P.S No</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6">
+                                            <div class="custom-control custom-checkbox custom-control-inline">
+                                                <input type="checkbox" class="custom-control-input" id="rs_no">
+                                                <label class="custom-control-label" for="rs_no">R.S No</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox custom-control-inline">
+                                                <input type="checkbox" class="custom-control-input" id="block_no">
+                                                <label class="custom-control-label" for="block_no">Block No</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group button-group mb-0 col-md-12">
+                                            <button type="submit" class="btn">Submit</button>
+                                            <button type="submit" class="btn btn-secondary">Save & Share</button>
+                                            <button type="submit" class="btn btn-outline">Cancel</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        $( function() {
+            $(".zed__datepicker").datepicker();
+        });
+    </script>
+    <script>
+        swal({
+            title: "You have saved you Assigned task",
+            icon: "success",
+            button: "Continue",
+        });
+    </script>
+</body>
+</html>
